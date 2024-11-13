@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.footer{
+    margin-top: 50px;
+    padding: 50px;
+    background-color: rgb(46, 46, 46);
+    height: 40vh;
+}
+
+.container{
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: red; */
+    height: 30vh;
+    justify-content: space-around;
+}
+
+.column{
+    display: inline-block;
+    color: rgb(164, 164, 164);
+    font-family:'poppins' ,sans-serif;
+    font-size: 1.2rem;
+    font-weight:500;
+    
+}
+
+.column h4{
+    position: relative;
+    text-transform: capitalize;
+    color: white;
+    cursor: pointer;
+    margin-left: 11px;
+}
+
+
+.row ul{
+    margin-top: 10px;
+}
+
+.row ul li{
+    list-style-type: none;  
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    width: 200px
+}
+
+.row ul li:hover{
+    padding-left: 20px;
+    color: rgb(191, 56, 78);
+    cursor: pointer;
+}
+
+.row-icons i{
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    align-content: center;
+}
+.row-icons{
+    padding: 5px;
+    margin: 5px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row-icons i:hover{
+    color: rgb(191, 56, 78);
+    font-size: 2.1rem;
+    cursor: pointer;
+}
+
+
+
+.column h4::after{
+    content: '';
+    width: 0%;
+    background-color: rgb(191, 56, 78);
+    position: absolute;
+    height: .5vh;
+    top: 30px;
+    left: 1.5px;
+    transition: .5s;
+}
+
+.column h4:hover::after{
+    width: 40%;
+}
+
+.login-back{
+    background-color: rgb(237, 237, 237);
+}
+
+.login-size{
+    height: 470px;
+    width: 400px;
+    min-width: 300px;
+    box-shadow: 6px 6px 30px rgba(42, 41, 41, 0.112);
+}
+
+.i-position{
+    position:absolute;
+    top: 50%;
+    transform: translateX(-240%);
+    color:rgb(111, 111, 111); ;
+    cursor: pointer;
+}
+
+.custom-icon {
+    color: red;
+    font-size: 40px;
+    margin-right: 10px;
+  }
